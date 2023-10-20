@@ -16,15 +16,13 @@ Standard (harder):
 
 Requirements:
 
-* python >= 3.6
+* python = 3.6.13
+  
+* gcc = 7.5.0
+  
+* keras = 2.6.0
 
-* scons >= 2.1.0
-
-* g++ >= 4.9
-
-* zlib >= 1.2.4
-
-* binutils >= 2.2.2
+* Tensorflow = 2.6.0
 
 * TAPE embedding: available at https://github.com/songlab-cal/tape
 
@@ -43,6 +41,7 @@ Requirements:
 ### DeepMineLys USAGE: running on command line
 
 ```
+python predict_model.py [your sequence file path] [your model file path]
 
 ```
 
