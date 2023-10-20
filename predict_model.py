@@ -36,6 +36,8 @@ from matplotlib import pyplot as plt
 import numpy as np
 import math
 os.environ["CUDA_VISIBLE_DEVICES"]="-1"
+seq_file=sys.argv[1]
+model_file=sys.argv[2]
 #读取输入的序列文件，文件格式要求，第一列为序列名称，第二列及以后为编码后的序列特征
 def read_file(X):
     File = pd.read_csv(str(X), header=None)
@@ -83,17 +85,14 @@ def Trans_data(Array):
     PHY_array=np.reshape(PHY_array,(-1,2,2,1))
     PHY_array=PHY_array.astype('float64')
     return Unirep_array,PHY_array
-input_path="XXXXXXX"
-Data,item_name=read_file("input_path")
-print(item_name.shape,Data.shape)
+Data,item_name=read_file(str(seq_file))
 TAPE,PHY=Trans_data(Data)
 PHY=np.reshape(PHY,(-1,2, 2, 1))
 item_name=np.array(item_name)
 TAPE=TAPE.astype('float64')
 PHY=PHY.astype('float64')
 ##Set the model path
-Model_dir="XXXX"
-HOME_DIR = Model_dir
+HOME_DIR = str(model_file)
 os.chdir(Model_dir)
 json_file = open('./Unirep_classifier.json', 'r')
 best_model_json = json_file.read()
