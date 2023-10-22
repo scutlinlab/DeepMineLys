@@ -55,7 +55,7 @@ The input_seq_file is represented in a sequence file with specific formatting:
 - The predict output file consists of multiple rows, each containing the following components:
   - Column 1: Sequence name.
   - Columns 2 : predict lable(0 for Non-EVH,1 for Endolysin,2 for VAL and 3 for holin).
-  - Columns 3 to 6: prediction score of Non-EVH,Endolysin,VAL and holin,respectively。
+  - Columns 3 to 6: prediction score of Non-EVH,Endolysin,VAL and holin,respectively.
 
 
 
