@@ -16,11 +16,11 @@ Standard (harder):
 
 Requirements:
 
-* python = 3.6.8
+* python >= 3.6.8
+
+* gcc >= 7.3.0
 
 * Tensorflow = 2.6.0
-
-* gcc = 7.3.0
 
 * Keras = 2.6.0
 
