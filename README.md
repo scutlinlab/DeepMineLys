@@ -24,7 +24,6 @@ Requirements:
 
 * Keras = 2.6.0
 
-* binutils >= 2.2.2
 
 * TAPE embedding: available at https://github.com/songlab-cal/tape
 
