@@ -51,15 +51,15 @@ The input_seq_file is represented in a sequence file with specific formatting:
   - Columns 2 to 1901: TAPE embedding.
   - Columns 1902 to 1905: PHY embedding.
 
+- THe predict output file size: N × 6, where N represents the number of sequences.
+- The predict output file consists of multiple rows, each containing the following components:
+  - Column 1: Sequence name.
+  - Columns 2 : predict lable(0 for Non-EVH,1 for Endolysin,2 for VAL and 3 for holin).
+  - Columns 3 to 6: prediction score of Non-EVH,Endolysin,VAL and holin,respectively。
 
 
 
 
-| Sequence Name  |   TAPE Embedding                       |    PHY embedding                        |
-| Seq_1          | TAPE_Fea_1,TAPE_Fea_2,...TAPE_Fea_1900 | PHY_Fea_1,PHY_Fea_2,PHY_Fea_3,PHY_Fea_4 |
-| Seq_2          | TAPE_Fea_1,TAPE_Fea_2,...TAPE_Fea_1900 | PHY_Fea_1,PHY_Fea_2,PHY_Fea_3,PHY_Fea_4 |
-| .....          |   .....                                |   .....                                 |
-| Seq_N          | TAPE_Fea_1,TAPE_Fea_2,...TAPE_Fea_1900 | PHY_Fea_1,PHY_Fea_2,PHY_Fea_3,PHY_Fea_4 |
 
 
 
