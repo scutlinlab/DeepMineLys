@@ -16,13 +16,13 @@ Standard (harder):
 
 Requirements:
 
-* python >= 3.6
+* python = 3.6.8
 
-* scons >= 2.1.0
+* Tensorflow = 2.6.0
 
-* g++ >= 4.9
+* gcc = 7.3.0
 
-* zlib >= 1.2.4
+* Keras = 2.6.0
 
 * binutils >= 2.2.2
 
@@ -43,6 +43,6 @@ Requirements:
 ### DeepMineLys USAGE: running on command line
 
 ```
-
+python predict_model.py input_seq.csv model_dir_path
 ```
 
