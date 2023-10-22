@@ -55,3 +55,15 @@ The input_seq_file is represented in a sequence file with specific formatting:
 
 
 
+| dafsdf  |       |       |
+| ------- | ----- | ----- |
+|         |       |       |
+| ghsdfgs |       |       |
+|         |       | asdfa |
+| dafd    | asdfa |       |
+
+
+
+
+
+
