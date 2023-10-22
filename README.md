@@ -42,6 +42,16 @@ Requirements:
 ### DeepMineLys USAGE: running on command line
 
 ```
-python predict_model.py input_seq.csv model_dir_path
+python predict_model.py input_seq_file.csv model_dir_path
+The input_seq_file is represented in a sequence file with specific formatting:
+
+- File size: N * 1905, where N represents the number of sequences.
+- The file consists of multiple rows, each containing the following components:
+  - Column 1: Sequence name.
+  - Columns 2 to 1901: TAPE feature embedding.
+  - Columns 1902 to 1905: PHY embedding.
+
+
+
 ```
 
