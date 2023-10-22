@@ -55,12 +55,12 @@ The input_seq_file is represented in a sequence file with specific formatting:
 
 
 
-| dafsdf  |       |       |
-| ------- | ----- | ----- |
-|         |       |       |
-| ghsdfgs |       |       |
-|         |       | asdfa |
-| dafd    | asdfa |       |
+| Sequence Name  |   TAPE Embedding    |    PHY embedding   |
+| Seq_1 | TAPE_Fea_1,TAPE_Fea_2,...TAPE_Fea_1900 | PHY_Fea_1,PHY_Fea_2,PHY_Fea_3,PHY_Fea_4 |
+| Seq_2        |  TAPE_Fea_1,TAPE_Fea_2,...TAPE_Fea_1900     |   PHY_Fea_1,PHY_Fea_2,PHY_Fea_3,PHY_Fea_4    |
+| ---- |   ----    |   ----    |
+| Seq_N       |    TAPE_Fea_1,TAPE_Fea_2,...TAPE_Fea_1900   | PHY_Fea_1,PHY_Fea_2,PHY_Fea_3,PHY_Fea_4 |
+
 
 
 
