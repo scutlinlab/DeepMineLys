@@ -10,6 +10,8 @@ DeepMineLys was implemented using the Python package Keras (version 2.6.0) (http
 
 License: 
 
+
+
 ### Notice:
 
 ### INSTALLATION in Ubuntu
@@ -32,7 +34,7 @@ Requirements:
   ```
   babbler-1900 (UniRep model)
   tape-embed unirep my_input.fasta output_filename.npz babbler-1900 --tokenizer unirep
-  ``` 
+  ```
 
 * PHY embedding: available at R pakage "Peptides" by 
 
@@ -41,13 +43,14 @@ Requirements:
   ```
 
   
+
 ### DeepMineLys USAGE: running on command line
 
 ```
 python predict_model.py input_seq_file.csv model_dir_path
 ```
 
-Input:
+Format of Input file:
 
 The input_seq_file is represented in a sequence file with specific formatting:
 
@@ -57,12 +60,37 @@ The input_seq_file is represented in a sequence file with specific formatting:
   - Columns 2 to 1901: TAPE embedding.
   - Columns 1902 to 1905: PHY embedding.
 
-Output:
+- - 
+
+### *Examples*
+
+```
+>seq_1
+MALRFRPVPSDSYVSSSFGPRWGTIHRGTDFGRSGGAGGMPVYAAQGGTVVYAGAARGFGGPDPAGWVVIDHPTADGSGTTVYGHIIREVSVGQRVKAGQRIGRVNPNSATNGGVAPHLHFEVHPTVWRQGSQIDPIGWLAGARNPEAAPVSKDTTPVVFGLDISEFQDGLSLVRAAKQGLKFVIIRTTDGTHKDRVYQ
+>seq_2
+MKINEKGLIIIKRFEGFRSKAYRCPAGVWTIGFGHTGGVKDGDFIRREDAEKLLKKDVERFERMVSYINAIGNYNFNENEFSALVSFAFNIGNVKGVTANGTRTKQQIADAMLKYCYATANGKKKKLSGLESRRKQEYTLFKTPVKVLHDSENGDYNMKLIQKGSKGKAVKIWQCIIGVTPDGTFGTNTEKVTKTFQKD
+>seq_3
+MSLQGIDVSSHQTGIDLSKVPCDFVIVKATEGVNYVNPDCDRAVQQCIKLGKCWGTYHYVDGSGAVAEADYYVDNIKGYLGKGILCIDWESGSNRAWGNYAYLETLVSRVIERTDIKPLIYVQASAYAPTAAVAQRHDCGLWIAQYADMNATGYQDTPWNEGAYSCAIRQYSSAGRLPGWSGNLDLDKFYGDANAWRKYA
+>seq_4
+MDWNNVVADETKLLTVHYTPGRTQNLRGIVLHHNAGNLSIQDCYNVWQSREASAHYQVDINGRIGQLVNDDDTAWHAGSANPWSIGIEHANNQFGPWTISDATLEAGAHLVAALCKYYGLGRPEWMVNVFPHSYFMATACPGEIAGSQNAAYMSRAQEWYDAMVNGTDAGNAPSGTDQNAPMPAPEPVQPEGSDGFQGGT
+>seq_5
+MAVTGDKIVSKALKYLGNGGSKFWKDYGLPTGTSWCCAFVWDIFRMCKASNLFYGGNKTAYVPTAQQWLKKNCKHVKMADARPGDVVIFTWTGNGYNSERGSRDHIGFIRSKGTSNTAYTIEGNTSGGKVAKRTRAACYIYGIYRPNYPKKKASATKKAYSGTFPKLPKRGWFKSGDTGTQVKNLQKFLNWCIDAGLAID
+```
+
+
+
+
+
+
+
+Format of Output:
+
 - THe predict output file size: N × 6, where N represents the number of sequences.
 - The predict output file consists of multiple rows, each containing the following components:
   - Column 1: Sequence name.
   - Columns 2 : predict lable(0 for Non-EVH,1 for Endolysin,2 for VAL and 3 for holin).
   - Columns 3 to 6: prediction score of Non-EVH,Endolysin,VAL and holin,respectively.
+  - 
 
 
 
@@ -70,7 +98,4 @@ Output:
 
 
 
-
-
-
-
+![2dbfca2fa774685bec1f7097a118dda](C:\Users\fuyiran\Documents\WeChat Files\T-blueseaswing\FileStorage\Temp\2dbfca2fa774685bec1f7097a118dda.png)
