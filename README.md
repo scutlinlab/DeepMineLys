@@ -8,6 +8,8 @@ DeepMineLys was implemented using the Python package Keras (version 2.6.0) (http
 
 ------
 
+License: 
+
 ### Notice:
 
 ### INSTALLATION in Ubuntu
