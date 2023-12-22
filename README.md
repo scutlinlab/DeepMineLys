@@ -115,7 +115,7 @@ The input_seq_file is represented in a sequence file with specific formatting:
   - Columns 1902 to 1905: PHY embedding.
 
 ```
-# input_seq_file.csv
+# input_sequences_file.csv
 1,seq_1,0.4757,0.482,0.5053,0.4481,0.3669,0.5189,0.3791,...,0.4777.4,0.4491.1,0.4732.2,0.7467160165049,4.450799961725889,-0.43443708609271503,77.4834437086093
 1,seq_2,0.4973,0.5069,0.5056,0.4748,0.3633,0.5021,0.3436,...,0.3981,0.4945,0.4782,0.681948663202157,2.49431590626754,-0.29642857142857104,76.0204081632653
 0,seq_3,0.4868,0.4542,0.4904,0.4504,0.4745,0.4678,0.5096,...,0.4519,0.5594,0.5473,0.610328043602646,-7.93617720907427,-0.49764705882352894,70.8823529411765
@@ -127,7 +127,7 @@ The input_seq_file is represented in a sequence file with specific formatting:
 
 ```
 
-Format of Output:
+Format of output file:
 
 - The predict output file size: N × 6, where N represents the number of sequences.
 
@@ -135,8 +135,20 @@ Format of Output:
 
   - Column 1: Sequence name.
 
-  - Columns 2 : predict lable(0 for Non-EVH,1 for Endolysin,2 for VAL and 3 for holin).
+  - Column 2 : Predict lable (0 for Non-EVH, 1 for Endolysin, 2 for VAL and 3 for Holin).
 
-  - Columns 3 to 6: prediction score of Non-EVH,Endolysin,VAL and holin,respectively.
+  - Column 3 to 6: Prediction score of Non-EVH, Endolysin, VAL and Holin, respectively.
 
     
+
+```
+# output_prediction_file
+seq_1	1	0.0378	0.9470	0.0081	0.0072
+seq_2	1	0.0088	0.9884	0.0021	0.0007
+seq_3	0	0.9997	0.0002	0.0001	0.0000
+seq_4	0	0.6698	0.1755	0.0939	0.0608
+seq_5	2	0.3200	0.0148	0.6378	0.0273
+seq_6	2	0.0068	0.0016	0.9898	0.0018
+seq_7	3	0.2206	0.1959	0.1738	0.4097
+seq_8	3	0.0128	0.0136	0.0080	0.9656
+```
