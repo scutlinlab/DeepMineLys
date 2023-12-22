@@ -76,7 +76,7 @@ Requirements in Ubuntu:
 
 ```
 # running on command line
-python predict_model.py input_seq_file.csv model_dir_path
+python predict_model.py input_sequences_file.csv model_dir_path
 ```
 
 
