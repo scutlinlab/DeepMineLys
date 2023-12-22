@@ -30,10 +30,6 @@ No one is permitted to use, copy, modify, merge, publish, distribute, sublicense
 
 
 
-
-
-### Notice:
-
 ### 1. INSTALLATION
 
 Standard (harder):
@@ -81,7 +77,7 @@ python predict_model.py input_sequences_file.csv model_dir_path
 
 
 
-### *3. Examples*
+### 3. Examples
 
 ```
 # First input protein sequences file
