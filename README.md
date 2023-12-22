@@ -56,7 +56,7 @@ Requirements in Ubuntu:
 * TAPE embedding: available at https://github.com/songlab-cal/tape
 
   ```
-  babbler-1900 (UniRep model)
+  # babbler-1900 (UniRep model)
   tape-embed unirep input.fasta output_filename.npz babbler-1900 -tokenizer unirep
   ```
 
