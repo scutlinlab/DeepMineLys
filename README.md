@@ -57,7 +57,7 @@ Requirements in Ubuntu:
 
   ```
   # babbler-1900 (UniRep model)
-  tape-embed unirep input.fasta output_filename.npz babbler-1900 -tokenizer unirep
+  tape-embed unirep input.fasta output_filename.npz babbler-1900 --tokenizer unirep
   
   # And then you can run the read_npz.py to get the tape embedding
   ```
